@@ -293,15 +293,7 @@ class KahootFlooder:
 
 if __name__ == "__main__":
     try:
-        Write.Print(f'''
-\t\t88888888ba                        88               88                                             
-\t\t88      "8b                       88               88                                      ,d     
-\t\t88      ,8P                       88               88                                      88     
-\t\t88aaaaaa8P'  ,adPPYYba,   ,adPPYb,88  88       88  88,dPPYba,    ,adPPYba,    ,adPPYba,  MM88MMM  
-\t\t88""""88'    ""     `Y8  a8"    `Y88  88       88  88P'    "8a  a8"     "8a  a8"     "8a   88     
-\t\t88    `8b    ,adPPPPP88  8b       88  88       88  88       88  8b       d8  8b       d8   88     
-\t\t88     `8b   88,    ,88  "8a,   ,d88  "8a,   ,a88  88       88  "8a,   ,a8"  "8a,   ,a8"   88,    
-\t\t88      `8b  `"8bbdP"Y8   `"8bbdP"Y8   `"YbbdP'Y8  88       88   `"YbbdP"'    `"YbbdP"'    "Y888\n''', Colors.purple_to_red, interval=0.000)
+        Write.Print(f'''Kahoot Flooder By Ayka:\n''', Colors.purple_to_red, interval=0.000)
         line = f"{Output.cherry}={Output.red}="
         print(line * 60)
 
