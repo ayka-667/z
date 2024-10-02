@@ -28,8 +28,8 @@ class Output:
         return ansi_color
     
     reset = colored_text("#ffffff")
-    red = colored_text("#c1121f")
-    pink = colored_text("#ffafcc")
+    red = colored_text("#a3000b")
+    pink = colored_text("#4287f5")
     medium_dark_green = colored_text("#4f772d")
     dark_green = colored_text("#606c38")
     light_cyan = colored_text("#3bceac")
@@ -38,12 +38,12 @@ class Output:
     idk = colored_text("#ee6c4d")
     yellow = colored_text("#f0c808")
     strong_red = colored_text("#660708")
-    gray = colored_text("#5f7470")
+    gray = colored_text("#e6e6e6")
     light_blue = colored_text("#baf2d8")
     light_green = colored_text("#8ea604")
     cherry = colored_text("#b23a48")
     light_magenta = colored_text("#a663cc")
-    dark_blue = colored_text("#0d00a4")
+    dark_blue = colored_text("#4287f5")
     pretty_green = colored_text("#9ef01a")
     turquesa = colored_text("#00916e")
     orange = colored_text("#f77f00")
@@ -293,15 +293,19 @@ class KahootFlooder:
 
 if __name__ == "__main__":
     try:
-        Write.Print(f'''Kahoot Flooder By Ayka:\n''', Colors.purple_to_red, interval=0.000)
-        line = f"{Output.cherry}={Output.red}="
-        print(line * 60)
+        Write.Print(f'''
+\t\t┓┏┓  ┓        ┏┓┓     ┓    
+\t\t┃┫ ┏┓┣┓┏┓┏┓╋  ┣ ┃┏┓┏┓┏┫┏┓┏┓
+\t\t┛┗┛┗┻┛┗┗┛┗┛┗  ┻ ┗┗┛┗┛┗┻┗ ┛ 
+                           \n''', Colors.white_to_red, interval=0.000)
+        print(f"\t\t\t[ By {Output.cherry}Ayka {Output.gray}]")
+        print(f"\t\t  [ discord.gg/{Output.cherry}nekohost{Output.gray} ]")
 
         threading.Thread(target=Console.title).start()
 
-        threads = input(f"\n{Output.gray} {KahootFlooder.__time__("")} {Output.reset}({Output.cherry}?{Output.reset}) {Output.gray}Bot Amount: {Output.light_cyan}")
-        names = input(f"{Output.gray} {KahootFlooder.__time__("")} {Output.reset}({Output.cherry}?{Output.reset}) {Output.gray}Bot Names: {Output.light_cyan}")
-        kahoot_id = input(f"{Output.gray} {KahootFlooder.__time__("")} {Output.reset}({Output.cherry}?{Output.reset}) {Output.gray}Kahoot Game ID: {Output.light_cyan}"); print()
+        threads = input(f"\n{Output.gray} {KahootFlooder.__time__("")} {Output.reset}({Output.cherry}?{Output.reset}) {Output.gray}Bot Amount: {Output.cherry}")
+        names = input(f"{Output.gray} {KahootFlooder.__time__("")} {Output.reset}({Output.cherry}?{Output.reset}) {Output.gray}Bot Names: {Output.cherry}")
+        kahoot_id = input(f"{Output.gray} {KahootFlooder.__time__("")} {Output.reset}({Output.cherry}?{Output.reset}) {Output.gray}Kahoot Game ID: {Output.cherry}"); print()
 
         while True:
             while threading.active_count()-1 < int(threads) + 1:
